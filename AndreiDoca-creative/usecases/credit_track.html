@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Track - Manage Your Loans, Effortlessly - UI/UX Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../usecases/styles/credit_track.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- SVG Icon -->
+     <link rel="icon" type="image/x-icon" href="../assets/logo.jpg">
+     
+</head>
+<body>
+    <!-- Floating Back Button -->
+    <a href="../index.html" class="back-button" id="backButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 19-7-7 7-7"/>
+            <path d="M19 12H5"/>
+        </svg>
+        <span>Go Back</span>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="tags">
+                <span class="tag">Mobile</span>
+                <span class="tag">FinTech</span>
+                <span class="tag">Finance</span>
+            </div>
+            <h1>Credit Track</h1>
+            <p class="subtitle">Manage Your Loans, Effortlessly.</p>
+            <div class="hero-image">
+               <img src="./assets/Credit_Track/cover.jpg" alt="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-label">Role</div>
+                    <div class="detail-value">UI/UX Designer</div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-label">Duration</div>
+                    <div class="detail-value">5 Months</div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-label">Platform</div>
+                    <div class="detail-value">iOS & Android</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="overview-grid">
+                <div>
+                    <h3>The Challenge</h3>
+                    <p>Users often feel overwhelmed or anxious when interacting with financial data, especially credit scores, which are abstract, hard to interpret, and tied to emotional stress.
+                         The challenge was to design an interface that demystifies credit behavior, translates complex data into actionable insights, and builds user confidence, not confusion.</p>
+                </div>
+                <div>
+                    <h3>Goals</h3>
+                     <ul class="key-questions">
+                        <li>Simplify loan management by making balances, due dates, and payment options instantly visible, turning financial complexity into clear, actionable steps.</li>
+                        <li>Enable users to make advance payments or pay off debt in full with one tap, reducing stress and giving them control over their financial future.</li>
+                        <li>Provide personalized, context-aware notifications for upcoming payments, rate changes, or document deadlines, helping users avoid penalties and stay compliant.</li>
+                        <li>Build a secure, scalable design system that supports multiple loan types, currencies, and user roles (Personal/Business), ensuring consistency across all screens and future features.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overview-grid" style="margin-top: 2rem;">
+                <div>
+                    <h3>Business Challenge</h3>
+                    <p>Balancing transparency with monetization: how to offer genuine value (free credit monitoring, personalized tips) while creating a sustainable business model (premium insights, partner offers), without making users feel “sold” or spammed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+     <!-- User Research Section -->
+    <section class="section">
+        <div class="container">
+            <h2>User Research</h2>
+            <p class="section-description">
+                To ensure CreditTrack meets real user needs, I conducted qualitative research with 10 participants, including individuals managing personal loans, small business owners with credit lines, and users recovering from late payments.
+                The goal was to understand how people currently track their loans, what pain points they experience, and what they expect from a modern digital loan management tool.
+            </p>
+            
+            <p style="font-size: 0.9375rem; color: #374151; margin-bottom: 0.5rem; margin-top: 1.5rem;">I used semi-structured interviews to uncover behaviors, frustrations, and motivations around parking payments, ticket management, and notifications. Key questions included:</p>
+            <ul class="key-questions">
+                <li>How do you currently track your loan payments and due dates?</li>
+                <li>What’s the most frustrating part of managing your loans?</li>
+                <li>Do you ever miss a payment? What usually causes it?</li>
+                <li>What would make managing your loans easier or less stressful for you?</li>
+            </ul>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <p>Users often forget upcoming payments due to scattered reminders, unclear due dates, or lack of visual cues, leading to late fees and credit score damage.</p>
+                </div>
+                <div class="insight-card">
+                    <p>Many rely on manual tracking methods like calendar notes or spreadsheets, resulting in inconsistent updates and missed deadlines.</p>
+                </div>
+                <div class="insight-card">
+                    <p>There’s a strong desire for simplicity and instant clarity, users want to see at a glance: total debt, next payment amount, due date, and how to pay ahead, without digging through emails or statements.</p>
+                </div>
+                <div class="insight-card">
+                    <p>Users want proactive, context-aware alerts, especially for rate changes, payment deadlines, or required documents, to avoid surprises and stay in control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Information Architecture -->
+    <section class="section">
+        <div class="container">
+            <h2>Information Architecture</h2>
+            <p class="section-description">
+               The app is structured around four core pillars of loan management: Loan Overview, Payments & Actions, Profile & Security, and Documents & Insights. 
+               This architecture enables users to quickly access critical financial data, take action on payments, manage personal details, and retrieve important documents, all within a clear, intuitive navigation system.
+            </p>
+            <div class="placeholder-image">
+                <img src="./assets/Credit_Track/IA.jpg" alt="Information Architecture Overview">
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Design System -->
+    <section class="section">
+        <div class="container">
+            <h2>Component Library</h2>
+            <p class="section-description">
+                Created a scalable UI system with WCAG-compliant components, including loan summaries, payment buttons, and secure forms — to ensure consistency and fast implementation across all screens.
+            </p>
+
+            <div class="placeholder-image">
+                <img src="./assets/Credit_Track/Component_Library.jpg" alt="Design System Overview">
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+   <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Design Process</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-header">
+                        <div class="process-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="process-number">01</div>
+                            <h3>Research & Discovery</h3>
+                            <p>Interviewed loan users to uncover pain points like missed payments and document clutter, shaping CreditTrack around clarity and control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="process-header">
+                        <div class="process-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="process-number">02</div>
+                            <h3>Design & Ideation</h3>
+                            <p>Designed wireframes focused on core actions: view balances, pay ahead, and access documents, all in under three taps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="process-header">
+                        <div class="process-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="process-number">03</div>
+                            <h3>Prototyping</h3>
+                            <p>Built high-fidelity prototypes in Figma and tested key flows, loan overview, advance payment, and document access to refine usability and interactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="process-header">
+                        <div class="process-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="process-number">04</div>
+                            <h3>Testing & Validation</h3>
+                            <p>Validated the design with real users, iterating to ensure CreditTrack feels trustworthy, intuitive, and stress-free during time-sensitive actions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+ <!-- Screen Mockups Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Screen Mockups: Visual Design Details</h2>
+            <p class="section-description">See how CreditTrack’s clean, functional UI turns loan management into a simple, stress-free experience — from balance overview to one-tap payments. </p>
+            
+            <div class="mockups-grid">
+                 <div class="mockup-card">
+                    <div class="mockup-image">
+                        <img src="./assets/Credit_Track/Loans.jpg" alt="placeholder-image">
+                    </div>
+                </div>
+
+
+                <div class="mockup-card">
+                    <div class="mockup-image">
+                        <img src="./assets/Credit_Track/Loans1.jpg" alt="placeholder-image">
+                    </div>
+                </div>
+
+                 <div class="mockup-card">
+                    <div class="mockup-image">
+                        <img src="./assets/Credit_Track/Advance Payment.jpg" alt="placeholder-image">
+                    </div>
+                </div>
+
+                 <div class="mockup-card">
+                    <div class="mockup-image">
+                        <img src="./assets/Credit_Track/Profile.jpg" alt="placeholder-image">
+                    </div>
+                </div>
+
+                 <div class="mockup-card">
+                    <div class="mockup-image">
+                        <img src="./assets/Credit_Track/Profile1.jpg" alt="placeholder-image">
+                    </div>
+                </div>
+
+                <div class="mockup-card">
+                    <div class="mockup-image">
+                        <img src="./assets/Credit_Track/Profile2.jpg" alt="placeholder-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+   
+   <!-- Results Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Results & Impact: Measuring the CityPark Experience</h2>
+            <p class="section-description">
+                Since launch, CreditTrack has helped users feel more in control of their loans, reducing missed payments, simplifying financial decisions, and increasing confidence
+                . The app’s clarity and one-tap actions have led to high engagement and strong user retention.
+            </p>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <p class="metric-label">Daily Active Users</p>
+                    <div class="metric-value-container">
+                        <p class="metric-value">76%</p>
+                        <div class="metric-change metric-up">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                            <span>+28%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">Advance Payment Rate</p>
+                    <div class="metric-value-container">
+                        <p class="metric-value">2.8x</p>
+                        <div class="metric-change metric-up">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                            <span>+350%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-label">User Satisfaction</p>
+                    <div class="metric-value-container">
+                        <p class="metric-value">4.6/5</p>
+                        <div class="metric-change metric-up">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                            <span>+1.2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <script src="./js/citypark.js"></script>
+
+    
+</body>
+</html>
