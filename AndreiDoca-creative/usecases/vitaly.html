@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -258,9 +258,7 @@
         border-radius: 3px;
         position: relative;
         overflow: hidden;
-        transition:
-          border-color 0.3s,
-          transform 0.3s;
+        transition: border-color 0.3s, transform 0.3s;
       }
       .ic::before {
         content: "";
@@ -401,9 +399,7 @@
         height: 100%;
         object-fit: cover;
         filter: brightness(0.9);
-        transition:
-          filter 0.3s,
-          transform 0.4s;
+        transition: filter 0.3s, transform 0.4s;
       }
       .mock-item:hover img {
         filter: brightness(1);
@@ -1019,47 +1015,7 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      (function () {
-        var cur = document.getElementById("cur"),
-          fol = document.getElementById("fol");
-        var mx = 0,
-          my = 0,
-          fx = 0,
-          fy = 0;
-        document.addEventListener("mousemove", function (e) {
-          mx = e.clientX;
-          my = e.clientY;
-          cur.style.left = mx + "px";
-          cur.style.top = my + "px";
-        });
-        (function t() {
-          fx += (mx - fx) * 0.1;
-          fy += (my - fy) * 0.1;
-          fol.style.left = fx + "px";
-          fol.style.top = fy + "px";
-          requestAnimationFrame(t);
-        })();
-        var nav = document.getElementById("siteNav");
-        window.addEventListener("scroll", function () {
-          nav.classList.toggle("scrolled", scrollY > 60);
-        });
-        var io = new IntersectionObserver(
-          function (es) {
-            es.forEach(function (e) {
-              if (e.isIntersecting) {
-                e.target.classList.add("in");
-                io.unobserve(e.target);
-              }
-            });
-          },
-          { threshold: 0.1 },
-        );
-        document.querySelectorAll(".rv").forEach(function (el) {
-          io.observe(el);
-        });
-      })();
-    </script>
+    <script src = "../js/scripts.js" defer></script>
+    
   </body>
 </html>
