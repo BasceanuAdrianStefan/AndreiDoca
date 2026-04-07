@@ -188,13 +188,22 @@ a {
     margin-bottom: 3rem;
     line-height: 1.6;
 }
-
-.hero-image {
+.cs-hero-img
+{
+      background: url("/usecases/assets/CityPark/Cover.jpg") center/cover no-repeat;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      filter: brightness(0.28) saturate(0.6);
+      transition: transform 8s ease;
+}
+.hero-image{
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 1rem;
     overflow: hidden;
     background-color: #f3f4f6;
+
 }
 
 .hero-image img {
@@ -853,14 +862,7 @@ a:focus {
       var(--ink) 100%
     );
   }
-  .cs-hero-img {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: url("./assets/Vitaly/hero_img.png") center/cover no-repeat;
-    filter: brightness(0.28) saturate(0.6);
-    transition: transform 8s ease;
-  }
+  
   .cs-hero:hover .cs-hero-img {
     transform: scale(1.03);
   }

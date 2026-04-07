@@ -224,6 +224,7 @@ nav.site-nav.scrolled {
   border: 1px solid rgba(201, 168, 76, 0.3);
   padding: 9px 20px;
   border-radius: 2px;
+  cursor:none;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 .nav-cta:hover {
