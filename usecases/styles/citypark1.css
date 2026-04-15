@@ -1344,6 +1344,8 @@ a:focus {
     max-width: 1000px;
     margin: 50px auto;
     overflow: hidden;
+    /* Safari fix: helps with clipping and z-index issues */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
   
   .cards {
@@ -1351,52 +1353,48 @@ a:focus {
     list-style: none;
     padding: 0;
     margin: 0;
-    /* Start centered on the card with the 'is-selected' class */
-    transform: translateX(-33.33%);
+    /* Use translate3d for GPU acceleration in Safari */
+    -webkit-transform: translate3d(-33.33%, 0, 0);
+    transform: translate3d(-33.33%, 0, 0);
+    will-change: transform;
   }
   
   .card {
     min-width: 33.33%;
+    /* Force flex-basis for Safari's layout engine */
+    flex: 0 0 33.33%; 
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.5s ease;
-    /* Default: Not selected */
-    transform: scale(0.8);
+    
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
     opacity: 0.3;
-    filter: blur(2px) grayscale(100%);
+    filter: blur(2px);
   }
   
   .card img {
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    /* Fix for object-fit in some Safari versions */
+    font-family: 'object-fit: cover;'; 
+    display: block;
   }
   
-  /* --- THE FIX: Explicit Selection --- */
+  /* Explicit Selection */
   .card.is-selected {
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     opacity: 1;
-    filter: blur(0) grayscale(0%);
-    z-index: 2;
+    filter: blur(0);
+    z-index: 5;
   }
   
-  .card.is-selected img {
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-  }
-  
-  /* Buttons */
+  /* Buttons remain simple */
   .controls {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    cursor: none;
-    background: white;
-    border: 1px solid #333;
-    border-radius: 5px;
   }

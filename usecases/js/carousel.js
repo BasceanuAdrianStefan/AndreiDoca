@@ -1,36 +1,40 @@
 const track = document.querySelector('.cards');
-const slides = Array.from(track.children);
 const nextBtn = document.querySelector('#next');
 const prevBtn = document.querySelector('#prev');
 
-// 1. Setup Initial State
-// Put the last slide at the front so Slide 1 starts in the middle
+// Initialization
 track.prepend(track.lastElementChild);
 updateSelection();
 
 let isMoving = false;
 
 function updateSelection() {
-  // The middle card is always the second <li> in the current DOM order
-  const allCards = document.querySelectorAll('.card');
-  allCards.forEach(card => card.classList.remove('is-selected'));
-  allCards[2].classList.add('is-selected'); 
+  const allCards = track.querySelectorAll('.card');
+  allCards.forEach(c => c.classList.remove('is-selected'));
+  // Index 1 is the middle card
+  if (allCards[2]) allCards[2].classList.add('is-selected');
 }
 
 function move(direction) {
   if (isMoving) return;
   isMoving = true;
 
+  // Re-enable transition for the slide
   track.style.transition = 'transform 0.5s ease-in-out';
+  track.style.webkitTransition = '-webkit-transform 0.5s ease-in-out';
   
   if (direction === 'next') {
-    track.style.transform = 'translateX(-66.66%)';
+    track.style.transform = 'translate3d(-66.66%, 0, 0)';
+    track.style.webkitTransform = 'translate3d(-66.66%, 0, 0)';
   } else {
-    track.style.transform = 'translateX(0%)';
+    track.style.transform = 'translate3d(0%, 0, 0)';
+    track.style.webkitTransform = 'translate3d(0%, 0, 0)';
   }
 
-  track.addEventListener('transitionend', () => {
+  // Use a cleaner listener for Safari compatibility
+  const finishMove = () => {
     track.style.transition = 'none';
+    track.style.webkitTransition = 'none';
     
     if (direction === 'next') {
       track.appendChild(track.firstElementChild);
@@ -38,10 +42,19 @@ function move(direction) {
       track.prepend(track.lastElementChild);
     }
 
-    track.style.transform = 'translateX(-33.33%)';
-    updateSelection(); // Re-apply the highlight to the new 2nd child
+    // Reset position to middle
+    track.style.transform = 'translate3d(-33.33%, 0, 0)';
+    track.style.webkitTransform = 'translate3d(-33.33%, 0, 0)';
+    
+    updateSelection();
     isMoving = false;
-  }, { once: true });
+    
+    track.removeEventListener('transitionend', finishMove);
+    track.removeEventListener('webkitTransitionEnd', finishMove);
+  };
+
+  track.addEventListener('transitionend', finishMove);
+  track.addEventListener('webkitTransitionEnd', finishMove); // For older Safari
 }
 
 nextBtn.addEventListener('click', () => move('next'));
