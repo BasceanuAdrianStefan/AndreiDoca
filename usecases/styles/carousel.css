@@ -2,8 +2,7 @@
     padding: 80px 0;
     border-bottom: 1px solid var(--border);
   }
-  .car-section-alt {
-  }
+  
   .car-hdr {
     max-width: var(--max);
     margin: 0 auto 48px;
@@ -72,6 +71,7 @@
     object-position: top;
     filter: brightness(0.92);
     transition: filter 0.4s;
+    
   }
   .car-screen.car-desktop:hover img {
     filter: brightness(1);
