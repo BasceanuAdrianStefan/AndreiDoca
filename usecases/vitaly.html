@@ -6,6 +6,7 @@
     <title>Vitaly — Mobile Health App · Andrei Doca</title>
     <link rel="icon" type="image/x-icon" href="../assets/logo.jpg" />
     <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
     <style>
     a{   
     cursor: none;
@@ -823,77 +824,136 @@
           </div>
         </div>
       </div>
-
       <div class="cs-sec rv">
         <div class="sey left">
           <div class="sln"></div>
-          <div class="slb">Design Evolution</div>
+          <div class="slb">Component Library</div>
+          
         </div>
-        <h2 class="cs-h2">Before <em>vs After</em></h2>
-        <p class="cs-p">
-          The revised interface
-          <strong>simplifies navigation, enhances visual hierarchy</strong>, and
-          accelerates data entry workflows. Key improvements include reduced
-          cognitive load and improved affordances for health logging tasks.
+        <h2 class="cs-h2">Screen Mockups: 
+          <em>Visual Design Details</em></h2>
+        <p class="cs-p">Explore the detailed design of key screens that make CityPark an intuitive, stress-free parking companion — from creating tickets in seconds to receiving smart expiry alerts and managing payments with one tap. 
         </p>
-        <div class="ba-grid">
-          <div class="ba-item">
-            <img src="./assets/Vitaly/Before.png" alt="Before" class="ba-img" />
-            <div class="ba-lbl">Before</div>
-          </div>
-          <div class="ba-item">
-            <img src="./assets/Vitaly/After.png" alt="After" class="ba-img" />
-            <div class="ba-lbl">After</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="cs-sec rv">
-        <div class="sey left">
-          <div class="sln"></div>
-          <div class="slb">Visual Design</div>
+   
+      
+        
+        
+      <div class="car-section car-section-alt rv">
+        
+  
+        <!-- MOBILE CAROUSEL — shows 3 phones side-by-side, slides one at a time -->
+        <div class="car-wrap car-wrap-mobile" id="mobileCar">
+          <div class="car-track car-track-mobile" id="mobileTrack">
+            <!-- MOBILE SLIDE 1 -->
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/1.jpg" alt="Mobile Home" loading="lazy"/>
+              </div>
+              <div class="phone-label">Home Screen</div>
+            </div>
+  
+            <!-- MOBILE SLIDE 2 -->
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/2.jpg" alt="Mobile Home" loading="lazy"/>
+                
+              </div>
+              <div class="phone-label">Compliance Overview</div>
+            </div>
+  
+            <!-- MOBILE SLIDE 3 -->
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/3.jpg" alt="Mobile Home" loading="lazy"/>
+                
+              </div>
+              <div class="phone-label">Quick Submission</div>
+            </div>
+  
+            <!-- MOBILE SLIDE 4 -->
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/4.jpg" alt="Mobile Home" loading="lazy"/>
+               
+              </div>
+              <div class="phone-label">Deadline Alerts</div>
+            </div>
+  
+            <!-- MOBILE SLIDE 5 -->
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/5.jpg" alt="Mobile Home" loading="lazy"/>
+                
+              </div>
+              <div class="phone-label">Profile &amp; Settings</div>
+            </div>
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/6.jpg" alt="Mobile Home" loading="lazy"/>
+                
+              </div>
+              <div class="phone-label">Profile &amp; Settings</div>
+
+            </div>
+            <div class="car-slide-m">
+              <div class="car-phone">
+                <div class="phone-notch"></div>
+                <img src="assets/Vitaly/7.jpg" alt="Mobile Home" loading="lazy"/>
+                
+              </div>
+              <div class="phone-label">Profile &amp; Settings</div>
+            </div>
+            <!-- Add more mobile slides following the same pattern -->
+          </div>
+          <!-- /car-track-mobile -->
+  
+          <button
+            class="car-btn car-prev"
+            data-target="mobileCar"
+            aria-label="Previous"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M19 12H5M12 5l-7 7 7 7" />
+            </svg>
+          </button>
+          <button
+            class="car-btn car-next"
+            data-target="mobileCar"
+            aria-label="Next"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+  
+          <div class="car-footer">
+            <div class="car-dots" id="mobileDots" hidden></div>
+            <div class="car-counter" id="mobileCounter" hidden>1 / 5</div>
+          </div>
         </div>
-        <h2 class="cs-h2">Screen <em>Mockups</em></h2>
-        <p class="cs-p">
-          Key screens that make Vitaly an intuitive, empowering health companion
-          — from creating health logs in seconds to visualizing progress and
-          managing data with clarity.
-        </p>
-        <div class="mock-grid">
-          <div class="mock-item">
-            <img src="./assets/Vitaly/1.jpg" alt="Screen 1" />
-          </div>
-          <div class="mock-item">
-            <img src="./assets/Vitaly/2.jpg" alt="Screen 2" />
-          </div>
-          <div class="mock-item">
-            <img src="./assets/Vitaly/3.jpg" alt="Screen 3" />
-          </div>
-          <div class="mock-item">
-            <img src="./assets/Vitaly/4.jpg" alt="Screen 4" />
-          </div>
-          <div class="mock-item">
-            <img src="./assets/Vitaly/5.jpg" alt="Screen 5" />
-          </div>
-          <div class="mock-item">
-            <img src="./assets/Vitaly/6.jpg" alt="Screen 6" />
-          </div>
-        </div>
-        <div
-          style="
-            margin-top: 10px;
-            border-radius: 3px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-          "
-        >
-          <img
-            src="./assets/Vitaly/7.jpg"
-            alt="Screen 7"
-            style="width: 100%; display: block; filter: brightness(0.9)"
-          />
-        </div>
+        <!-- /car-wrap-mobile -->
       </div>
+      <!-- /mobile section -->
+      
+      
+      
 
       <div class="cs-sec rv">
         <div class="sey left">
@@ -1026,6 +1086,7 @@
       </div>
     </footer>
     <script src = "../js/scripts.js" defer></script>
+    <script src = "js/carousel.js" defer></script>
     
   </body>
 </html>
