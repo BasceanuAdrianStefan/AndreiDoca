@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href ="../assets/logo.jpg" />
     <link rel="stylesheet" href="./styles/citypark1.css">
     <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
 
 
 </head> 
@@ -202,29 +203,114 @@
             <div class="slb">Component Library</div>
             
           </div>
-          <h2 class="cs-h2">Design <em>System</em></h2>
-          <p class="cs-p">Built a reusable component library with WCAG-compliant colors and key elements like ticket cards, timers, and payment buttons — ensuring consistency and speed across all CityPark screens.
+          <h2 class="cs-h2">Screen Mockups: 
+            <em>Visual Design Details</em></h2>
+          <p class="cs-p">Explore the detailed design of key screens that make CityPark an intuitive, stress-free parking companion — from creating tickets in seconds to receiving smart expiry alerts and managing payments with one tap. 
           </p>
-        </div>
 
-        <div class="carousel-container">
-          <div class="carousel-viewport">
-            <ul class="cards">
-              <li class="card"><img src="./assets/CityPark/1.jpg" alt="1"></li>
-              <li class="card"><img src="./assets/CityPark/2.jpg" alt="2"></li>
-              <li class="card"><img src="./assets/CityPark/3.jpg" alt="3"></li>
-              <li class="card"><img src="./assets/CityPark/4.jpg" alt="4"></li>
-              <li class="card"><img src="./assets/CityPark/5.jpg" alt="5"></li>
-            </ul>
-          </div>
+     
+        
+    
           
-          <div class="controls">
-            <button id="prev">←</button>
-            <button id="next">→</button>
+        <div class="car-section car-section-alt rv">
+          
+    
+          <!-- MOBILE CAROUSEL — shows 3 phones side-by-side, slides one at a time -->
+          <div class="car-wrap car-wrap-mobile" id="mobileCar">
+            <div class="car-track car-track-mobile" id="mobileTrack">
+              <!-- MOBILE SLIDE 1 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <div class="phone-notch"></div>
+                  <img src="assets/CityPark/1.jpg" alt="Mobile Home" loading="lazy"/>
+                </div>
+                <div class="phone-label">Home Screen</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 2 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <div class="phone-notch"></div>
+                  <img src="assets/CityPark/2.jpg" alt="Mobile Home" loading="lazy"/>
+                  
+                </div>
+                <div class="phone-label">Compliance Overview</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 3 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <div class="phone-notch"></div>
+                  <img src="assets/CityPark/3.jpg" alt="Mobile Home" loading="lazy"/>
+                  
+                </div>
+                <div class="phone-label">Quick Submission</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 4 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <div class="phone-notch"></div>
+                  <img src="assets/CityPark/4.jpg" alt="Mobile Home" loading="lazy"/>
+                 
+                </div>
+                <div class="phone-label">Deadline Alerts</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 5 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <div class="phone-notch"></div>
+                  <img src="assets/CityPark/5.jpg" alt="Mobile Home" loading="lazy"/>
+                  
+                </div>
+                <div class="phone-label">Profile &amp; Settings</div>
+              </div>
+    
+              <!-- Add more mobile slides following the same pattern -->
+            </div>
+            <!-- /car-track-mobile -->
+    
+            <button
+              class="car-btn car-prev"
+              data-target="mobileCar"
+              aria-label="Previous"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M19 12H5M12 5l-7 7 7 7" />
+              </svg>
+            </button>
+            <button
+              class="car-btn car-next"
+              data-target="mobileCar"
+              aria-label="Next"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+    
+            <div class="car-footer">
+              <div class="car-dots" id="mobileDots" hidden></div>
+              <div class="car-counter" id="mobileCounter" hidden>1 / 5</div>
+            </div>
           </div>
+          <!-- /car-wrap-mobile -->
         </div>
+        <!-- /mobile section -->
           
         
+      </div>
 
 
         <footer class="site-footer">
