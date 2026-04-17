@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City Park - The Smart Parking Solution for Urban Drivers. - UI/UX Case Study</title>
     <link rel="icon" type="image/x-icon" href ="../assets/logo.jpg" />
-    <link rel="stylesheet" href="./styles/citypark1.css">
+    <link rel="stylesheet" href="./styles/page_styles.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="./styles/carousel.css" />
 
@@ -16,25 +16,24 @@
     <div id="cur"></div>
     <div id="fol"></div>
 
-    <nav class="site-nav" id="siteNav">
-        <div class="nav-inner">
-          <a href="../index.html" class="nav-logo">Andrei <em>Doca</em></a>
-          <ul class="nav-links">
-          <li><a href="#project">Project</a></li>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#reaserch">Reaserch</a></li>
-          <li><a href="#design">Design</a></li>
-          <li><a href="#res">Results and impact</a></li>
-
-          </ul>
-          <div class="nav-right">
-            <div class="avail-dot"></div>
-            <a href="../index.html#contact" class="nav-cta">Get In Touch</a>
-          </div>
-        </div>
+    <nav id="nav">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Andrei <em>Doca</em></a>
+        <a href="../index.html#projects" class="nav-back"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+          >Back to work</a
+        >
+        <a href="../index.html#contact" class="nav-cta">Get In Touch</a>
+      </div>
     </nav>
     <div class="cs-hero">
-        <div class="cs-hero-img"></div>
+      <div class="cs-hero-img" style="background-image: url('/usecases/assets/CityPark/Cover.jpg');"></div>
         <div class="cs-hero-bg"></div>
         <div class="cs-hero-inner">
           <a href="../index.html#projects" class="cs-back"
@@ -132,16 +131,7 @@
 
           </div>
           
-            <div class="cs-sec rv">
-              <div class="sey left">
-                <div class="sln"></div>
-                <div class="slb">User Reaserch</div>
-              </div>
-              <h2 class = "cs-h2">Understanding <em>real needs</em></h2>
-              <p class="cs-p">
-                To ensure CityPark meets real user needs, I conducted qualitative research with <strong>10 participants </strong>  including daily commuters, occasional city visitors, and frequent parkers in urban areas. The goal was to understand how people currently manage parking, what pain points they experience, and what they expect from a modern digital parking solution.</p>
-            </div>
-          </div>
+            
           <div class="cs-sec rv">
             <div class="sey left">
               <div class="sln"></div>
@@ -279,7 +269,6 @@
               <!-- MOBILE SLIDE 1 -->
               <div class="car-slide-m">
                 <div class="car-phone">
-                  <div class="phone-notch"></div>
                   <img src="assets/CityPark/1.jpg" alt="Mobile Home" loading="lazy"/>
                 </div>
                 <div class="phone-label">Home Screen</div>
@@ -288,7 +277,6 @@
               <!-- MOBILE SLIDE 2 -->
               <div class="car-slide-m">
                 <div class="car-phone">
-                  <div class="phone-notch"></div>
                   <img src="assets/CityPark/2.jpg" alt="Mobile Home" loading="lazy"/>
                   
                 </div>
@@ -298,7 +286,6 @@
               <!-- MOBILE SLIDE 3 -->
               <div class="car-slide-m">
                 <div class="car-phone">
-                  <div class="phone-notch"></div>
                   <img src="assets/CityPark/3.jpg" alt="Mobile Home" loading="lazy"/>
                   
                 </div>
@@ -308,7 +295,6 @@
               <!-- MOBILE SLIDE 4 -->
               <div class="car-slide-m">
                 <div class="car-phone">
-                  <div class="phone-notch"></div>
                   <img src="assets/CityPark/4.jpg" alt="Mobile Home" loading="lazy"/>
                  
                 </div>
@@ -318,7 +304,6 @@
               <!-- MOBILE SLIDE 5 -->
               <div class="car-slide-m">
                 <div class="car-phone">
-                  <div class="phone-notch"></div>
                   <img src="assets/CityPark/5.jpg" alt="Mobile Home" loading="lazy"/>
                   
                 </div>
@@ -486,9 +471,9 @@
 
             
           </footer>
-          <script src = "../js/scripts.js" defer></script>
           
       <script src = "../js/scripts.js" defer></script>
       <script src="./js/carousel.js" defer></script>
+      <script src="./js/powerloop.js" defer></script>
   
 </body>
