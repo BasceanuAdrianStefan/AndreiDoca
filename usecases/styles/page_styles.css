@@ -1409,4 +1409,10 @@ a:focus {
   .cs-body {
     padding: 0 24px;
   }
+  .cs-meta-grid {
+    padding: 0 0;
+  }
+  .cs-meta-item {
+    padding: 18px 0 ;
+  }
 }
