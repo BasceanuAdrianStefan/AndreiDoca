@@ -716,6 +716,7 @@
   letter-spacing: -0.3px;
   color: var(--cream);
   margin-bottom: 32px;
+  height: 320px;
 }
 .c-quote .q {
   color: rgba(240, 235, 225, 0.35);
@@ -913,5 +914,8 @@
   }
   .acc-content {
     padding-left: 0;
+  }
+  .about-grid{
+    grid-template-columns: 1fr;
   }
 }
