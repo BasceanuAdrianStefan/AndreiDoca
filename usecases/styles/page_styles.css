@@ -81,6 +81,46 @@ nav.scrolled {
   background: var(--gold);
   color: var(--ink);
 }
+.feat-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 22px;
+      }
+      .feat {
+        padding: 24px 20px;
+        background: var(--ink2);
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        transition: border-color 0.3s, transform 0.3s;
+      }
+      .feat:hover {
+        border-color: rgba(201, 168, 76, 0.2);
+        transform: translateY(-3px);
+      }
+      .feat-n {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+      .feat-title {
+        font-family: var(--serif);
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--cream);
+        margin-bottom: 8px;
+        letter-spacing: -0.3px;
+      }
+      .feat-desc {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: rgba(240, 235, 225, 0.5);
+      }
+
 
 html {
   font-size: 16px;
@@ -565,6 +605,44 @@ a {
   touch-action: pan-x;
 }
 
+ .ia-modules {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-top: 24px;
+      }
+      .ia-mod {
+        padding: 24px 18px;
+        background: var(--ink2);
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        text-align: center;
+        transition: border-color 0.3s, transform 0.3s;
+      }
+      .ia-mod:hover {
+        border-color: rgba(201, 168, 76, 0.22);
+        transform: translateY(-3px);
+      }
+      .ia-num {
+        font-family: var(--mono);
+        font-size: 10px;
+        color: var(--gold);
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+      }
+      .ia-name {
+        font-family: var(--serif);
+        font-size: 17px;
+        color: var(--cream);
+        letter-spacing: -0.3px;
+        margin-bottom: 6px;
+      }
+      .ia-desc {
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--dim);
+        line-height: 1.6;
+      }
 /* Mărește zona de touch pe mobile pentru slider button */
 @media (max-width: 767px) {
   .slider-button {
@@ -1067,6 +1145,21 @@ a:focus {
   font-style: italic;
   color: rgba(240, 235, 225, 0.38);
 }
+.cs-quote {
+        border-left: 2px solid var(--gold);
+        padding: 18px 26px;
+        margin: 28px 0;
+        background: rgba(201, 168, 76, 0.04);
+        border-radius: 0 3px 3px 0;
+      }
+      .cs-quote p {
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 1.65;
+        color: rgba(240, 235, 225, 0.72);
+      }
 .cs-ul {
   list-style-position: inside;
 }

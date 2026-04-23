@@ -3,40 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/logo.jpg?v=2" />
-
-    <title>
-      PowerLoop — Online Reporting for Placed Batteries · Andrei Doca
-    </title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../usecases/styles/powerloop.css" />
-    <link rel="stylesheet" href="../usecases/styles/carousel.css" />
-<style> 
-      a{   
-        cursor: none;
-       }
-    
-    </style>
+    <title>PowerLoop — Online Reporting for Placed Batteries · Andrei Doca - UI/UX Case Study</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png?v=2" />
+    <link rel="stylesheet" href="./styles/page_styles.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
   </head>
   <body>
     <div id="grain"></div>
     <div id="cur"></div>
     <div id="fol"></div>
 
-    <!-- NAV -->
     <nav id="nav">
       <div class="nav-inner">
         <a href="../index.html" class="nav-logo">Andrei <em>Doca</em></a>
         <a href="../index.html#projects" class="nav-back"
-          ><svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
+          ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
           >Back to work</a
         >
@@ -44,153 +26,148 @@
       </div>
     </nav>
 
-    <!-- HERO -->
     <div class="cs-hero">
-      <div class="hero-bg-fallback"></div>
-      <!--
-    Add your cover image as inline style on the div below:
-    <div class="hero-bg" id="heroBg" style="background-image:url('images/powerloop/cover.jpg')"></div>
-  -->
-      <div class="hero-bg" id="heroBg"></div>
-      
-      <div class="hero-grad"></div>
-      <div class="hero-inner">
+      <div class="cs-hero-img" style="background-image: url('/usecases/assets/PowerLoop/Cover.jpg');"></div>
+      <div class="cs-hero-bg"></div>
+      <div class="cs-hero-inner">
         <a href="../index.html#projects" class="cs-back"
-          ><svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
+          ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
           >Back to work</a
         >
-        <div class="hero-tags">
-          <span class="hero-tag">Web App</span><span class="hero-tag">B2B</span
-          ><span class="hero-tag">Sustainability</span>
+        <div class="cs-htags">
+          <span class="cs-htag">Web App</span><span class="cs-htag">B2B</span
+          ><span class="cs-htag">Sustainability</span><span class="cs-htag">Desktop First</span>
         </div>
-        <h1 class="hero-title">Power<em>Loop</em></h1>
-        <p class="hero-sub">
-          Online reporting platform for placed batteries — turning complex EU
-          compliance data into clear, actionable insights for battery
-          distributors across Europe.
+        <h1 class="cs-title">Power<em>Loop</em></h1>
+        <p class="cs-subtitle">
+          Online reporting platform for placed batteries — turning complex EU compliance data into clear, actionable insights for battery distributors across Europe.
         </p>
-        <div class="hero-platform">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <rect x="2" y="3" width="20" height="14" rx="2" />
-            <path d="M8 21h8M12 17v4" /></svg
-          >Web Application · Desktop First
-        </div>
-      </div>
-      <div class="scroll-hint">
-        <div class="scroll-line"></div>
-        <div class="scroll-lbl">Scroll</div>
       </div>
     </div>
 
-    <!-- META -->
-    <div class="meta-bar">
-      <div class="meta-grid">
-        <div class="meta-item">
-          <div class="meta-lbl">Client</div>
-          <div class="meta-val">PowerLoop</div>
+    <div class="cs-meta">
+      <div class="cs-meta-grid">
+        <div class="cs-meta-item">
+          <div class="cs-meta-lbl">Client</div>
+          <div class="cs-meta-val">PowerLoop</div>
         </div>
-        <div class="meta-item">
-          <div class="meta-lbl">Role</div>
-          <div class="meta-val">UI/UX Designer</div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-lbl">Role</div>
+          <div class="cs-meta-val">UI/UX Designer</div>
         </div>
-        <div class="meta-item">
-          <div class="meta-lbl">Duration</div>
-          <div class="meta-val">5 Months</div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-lbl">Duration</div>
+          <div class="cs-meta-val">5 Months</div>
         </div>
-        <div class="meta-item">
-          <div class="meta-lbl">Platform</div>
-          <div class="meta-val">Web App</div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-lbl">Platform</div>
+          <div class="cs-meta-val">Web App</div>
         </div>
-        <div class="meta-item">
-          <div class="meta-lbl">Tools</div>
-          <div class="meta-val">Figma</div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-lbl">Tools</div>
+          <div class="cs-meta-val">Figma</div>
         </div>
-        <div class="meta-item">
-          <div class="meta-lbl">Year</div>
-          <div class="meta-val">2025</div>
+        <div class="cs-meta-item">
+          <div class="cs-meta-lbl">Year</div>
+          <div class="cs-meta-val">2025</div>
         </div>
       </div>
     </div>
 
-    <!-- BODY -->
     <div class="cs-body">
       <div class="cs-sec rv">
-        <div class="sey">
+        <div class="sey left">
           <div class="sln"></div>
           <div class="slb">Project Overview</div>
         </div>
         <h2 class="cs-h2">The <em>Challenge</em></h2>
         <p class="cs-p">
-          Battery distributors operating across European markets face an
-          increasingly complex regulatory landscape. The EU Battery Regulation
-          mandates precise tracking and reporting of every battery unit placed
-          on the market — yet most companies were managing this through
-          <strong
-            >fragmented spreadsheets, email threads, and manual PDF
-            submissions</strong
-          >
+          Battery distributors operating across European markets face an increasingly complex regulatory landscape. The EU Battery Regulation mandates precise tracking and reporting of every battery unit placed on the market — yet most companies were managing this through
+          <strong>fragmented spreadsheets, email threads, and manual PDF submissions</strong>
           prone to error and delay.
         </p>
         <p class="cs-p">
-          PowerLoop needed a centralized web platform that could replace this
-          chaos: one place to submit placement data, generate compliance
-          reports, track progress across regions, and give operations teams real
-          confidence they were meeting regulatory obligations.
+          PowerLoop needed a centralized web platform that could replace this chaos: one place to submit placement data, generate compliance reports, track progress across regions, and give operations teams real confidence they were meeting regulatory obligations.
         </p>
         <div class="cs-quote">
           <p>
-            "The core challenge wasn't technical — it was clarity. How do you
-            take dense regulatory data and turn it into something a
-            non-technical operations manager can act on in seconds?"
+            "The core challenge wasn't technical — it was clarity. How do you take dense regulatory data and turn it into something a non-technical operations manager can act on in seconds?"
           </p>
         </div>
-        <div class="divider">
-          <h2 class="cs-h2">Goals <em>&amp; Objectives</em></h2>
-          <div class="goals">
-            <div class="goal-row">
-              <div class="goal-dot"></div>
-              <div class="goal-txt">
-                Replace manual spreadsheet workflows with a structured digital
-                submission system for battery placement data.
+
+        <div>
+          <div style="margin-top: 40px">
+            <h2 class="cs-h2">Goals <em>&amp; Objectives</em></h2>
+            <div class="prob-list">
+              <div class="prob-row">
+                <div class="prob-n">01</div>
+                <div class="prob-t">
+                  Replace manual spreadsheet workflows with a structured digital submission system for battery placement data.
+                </div>
+              </div>
+              <div class="prob-row">
+                <div class="prob-n">02</div>
+                <div class="prob-t">
+                  Provide real-time compliance dashboards surfacing critical gaps and deadlines before they become regulatory violations.
+                </div>
+              </div>
+              <div class="prob-row">
+                <div class="prob-n">03</div>
+                <div class="prob-t">
+                  Enable multi-country, multi-user access with role-based permissions for managers, admins, and auditors.
+                </div>
+              </div>
+              <div class="prob-row">
+                <div class="prob-n">04</div>
+                <div class="prob-t">
+                  Generate audit-ready reports with a single action — reducing reporting time from days to minutes.
+                </div>
+              </div>
+              <div class="prob-row">
+                <div class="prob-n">05</div>
+                <div class="prob-t">
+                  Build a scalable design system adaptable to EU regulation updates and future market expansions.
+                </div>
               </div>
             </div>
-            <div class="goal-row">
-              <div class="goal-dot"></div>
-              <div class="goal-txt">
-                Provide real-time compliance dashboards surfacing critical gaps
-                and deadlines before they become regulatory violations.
+          </div>
+
+          
+        </div>
+
+        <div class="cs-sec rv">
+          <div class="sey left">
+            <div class="sln"></div>
+            <div class="slb">User Research</div>
+          </div>
+          <h2 class="cs-h2">Understanding <em>real needs</em></h2>
+          <p class="cs-p">
+            I conducted stakeholder interviews with <strong>8 participants</strong> across operations, compliance, and management roles — mapping their processes end-to-end to identify every friction point in the current reporting workflow.
+          </p>
+          <div class="insights-grid">
+            <div class="ic">
+              <div class="ic-icon">①</div>
+              <div class="ic-txt">
+                Operations teams spent 4–6 hours per reporting cycle manually cross-referencing shipment logs — with no version control and frequent data conflicts.
               </div>
             </div>
-            <div class="goal-row">
-              <div class="goal-dot"></div>
-              <div class="goal-txt">
-                Enable multi-country, multi-user access with role-based
-                permissions for managers, admins, and auditors.
+            <div class="ic">
+              <div class="ic-icon">②</div>
+              <div class="ic-txt">
+                Compliance managers had zero real-time visibility into submission status across markets, discovering gaps only days before regulatory deadlines.
               </div>
             </div>
-            <div class="goal-row">
-              <div class="goal-dot"></div>
-              <div class="goal-txt">
-                Generate audit-ready reports with a single action — reducing
-                reporting time from days to minutes.
+            <div class="ic">
+              <div class="ic-icon">③</div>
+              <div class="ic-txt">
+                Reports were built manually in Excel → PDF → email, with no audit trail and high risk of version mismatch between stakeholders.
               </div>
             </div>
-            <div class="goal-row">
-              <div class="goal-dot"></div>
-              <div class="goal-txt">
-                Build a scalable design system adaptable to EU regulation
-                updates and future market expansions.
+            <div class="ic">
+              <div class="ic-icon">④</div>
+              <div class="ic-txt">
+                Users wanted instant clarity: how many batteries placed, in which markets, against which targets — without opening another tab or running a pivot table.
               </div>
             </div>
           </div>
@@ -198,244 +175,128 @@
       </div>
 
       <div class="cs-sec rv">
-        <div class="sey">
-          <div class="sln"></div>
-          <div class="slb">User Research</div>
-        </div>
-        <h2 class="cs-h2">Understanding <em>real needs</em></h2>
-        <p class="cs-p">
-          I conducted stakeholder interviews with
-          <strong>8 participants</strong> across operations, compliance, and
-          management roles — mapping their processes end-to-end to identify
-          every friction point in the current reporting workflow.
-        </p>
-        <div class="insights">
-          <div class="ic">
-            <div class="ic-n">①</div>
-            <div class="ic-t">
-              Operations teams spent 4–6 hours per reporting cycle manually
-              cross-referencing shipment logs — with no version control and
-              frequent data conflicts.
-            </div>
-          </div>
-          <div class="ic">
-            <div class="ic-n">②</div>
-            <div class="ic-t">
-              Compliance managers had zero real-time visibility into submission
-              status across markets, discovering gaps only days before
-              regulatory deadlines.
-            </div>
-          </div>
-          <div class="ic">
-            <div class="ic-n">③</div>
-            <div class="ic-t">
-              Reports were built manually in Excel → PDF → email, with no audit
-              trail and high risk of version mismatch between stakeholders.
-            </div>
-          </div>
-          <div class="ic">
-            <div class="ic-n">④</div>
-            <div class="ic-t">
-              Users wanted instant clarity: how many batteries placed, in which
-              markets, against which targets — without opening another tab or
-              running a pivot table.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cs-sec rv">
-        <div class="sey">
+        <div class="sey left">
           <div class="sln"></div>
           <div class="slb">Information Architecture</div>
         </div>
-        <h2 class="cs-h2">Structuring <em>the experience</em></h2>
-        <p class="cs-p">
-          The platform is structured around <strong>four core modules</strong> —
-          designed around the compliance cycle, not arbitrary feature grouping.
-          Users always land where their next action is.
-        </p>
+        <h2 class="cs-h2">Structuring <em>the Experience</em></h2>
+        <p class="cs-p">The platform is structured around <strong>four core modules</strong> — designed around the compliance cycle, not arbitrary feature grouping. Users always land where their next action is.</p>
         <div class="ia-modules">
           <div class="ia-mod">
             <div class="ia-num">01</div>
             <div class="ia-name">Dashboard</div>
-            <div class="ia-desc">
-              Real-time compliance status &amp; KPIs across all markets
-            </div>
+            <div class="ia-desc">Real-time compliance status &amp; KPIs across all markets</div>
           </div>
           <div class="ia-mod">
             <div class="ia-num">02</div>
             <div class="ia-name">Submissions</div>
-            <div class="ia-desc">
-              Placement data entry, batch CSV upload &amp; validation
-            </div>
+            <div class="ia-desc">Placement data entry, batch CSV upload &amp; validation</div>
           </div>
           <div class="ia-mod">
             <div class="ia-num">03</div>
             <div class="ia-name">Reports</div>
-            <div class="ia-desc">
-              Audit-ready exports, download history &amp; scheduled sends
-            </div>
+            <div class="ia-desc">Audit-ready exports, download history &amp; scheduled sends</div>
           </div>
           <div class="ia-mod">
             <div class="ia-num">04</div>
             <div class="ia-name">Users</div>
-            <div class="ia-desc">
-              Roles, permissions, notifications &amp; account settings
-            </div>
+            <div class="ia-desc">Roles, permissions, notifications &amp; account settings</div>
           </div>
         </div>
       </div>
 
       <div class="cs-sec rv">
-        <div class="sey">
+        <div class="sey left">
           <div class="sln"></div>
           <div class="slb">Component Library</div>
         </div>
-        <h2 class="cs-h2">Design <em>System</em></h2>
-        <p class="cs-p">
-          A comprehensive Figma component library built for data-dense B2B
-          interfaces — WCAG AA compliant, 8px grid, semantic color tokens for
-          clean developer handoff.
-        </p>
-        <div class="comp-chips">
-          <div class="comp-chip">
-            <div class="comp-chip-lbl">Data Components</div>
-            <div class="comp-chip-txt">
-              Tables, filters, pagination, sortable columns, empty states
-            </div>
+        <h2 class="cs-h2">Design  <em>the System</em></h2>
+        <p class="cs-p">A comprehensive Figma component library built for data-dense B2B interfaces — WCAG AA compliant, 8px grid, semantic color tokens for clean developer handoff.</p>
+        <div class="ia-modules" style="display:flex;">
+          <div class="ia-mod">
+            
+            <div class="ia-name" style="color:#c9a84c;">Data Components</div>
+            <div class="ia-desc">Tables, filters, pagination, sortable columns, empty states</div>
           </div>
-          <div class="comp-chip">
-            <div class="comp-chip-lbl">Status System</div>
-            <div class="comp-chip-txt">
-              Compliant / Pending / Overdue / Error — chips, banners, badges
-            </div>
+          <div class="ia-mod">
+            
+            <div class="ia-name" style="color:#c9a84c;">Status System</div>
+            <div class="ia-desc">Compliant / Pending / Overdue / Error — chips, banners, badges</div>
           </div>
-          <div class="comp-chip">
-            <div class="comp-chip-lbl">Form Patterns</div>
-            <div class="comp-chip-txt">
-              Batch upload, inline validation, multi-step flows, confirmations
-            </div>
+          
+          <div class="ia-mod">
+            <div class="ia-name" style="color:#c9a84c; ">Form Patterns</div>
+            <div class="ia-desc">Batch upload, inline validation, multi-step flows, confirmations</div>
           </div>
         </div>
       </div>
+      
+
 
       <div class="cs-sec rv">
-        <div class="sey">
+        <div class="sey left">
           <div class="sln"></div>
           <div class="slb">Design Process</div>
         </div>
         <h2 class="cs-h2">From research <em>to launch</em></h2>
-        <div class="proc">
-          <div class="proc-row">
-            <div class="proc-n">01</div>
+        <div class="proc-steps">
+          <div class="proc-step">
+            <div class="ps-num">01</div>
             <div>
-              <div class="proc-title">Research &amp; Discovery</div>
-              <div class="proc-desc">
-                Stakeholder interviews and workflow mapping sessions with
-                operations and compliance teams. Mapped the full reporting cycle
-                end-to-end — from shipment receipt to regulatory submission.
+              <div class="ps-title">Research &amp; Discovery</div>
+              <div class="ps-desc">
+                Stakeholder interviews and workflow mapping sessions with operations and compliance teams. Mapped the full reporting cycle end-to-end — from shipment receipt to regulatory submission.
               </div>
             </div>
           </div>
-          <div class="proc-row">
-            <div class="proc-n">02</div>
+          <div class="proc-step">
+            <div class="ps-num">02</div>
             <div>
-              <div class="proc-title">Design &amp; Ideation</div>
-              <div class="proc-desc">
-                Low-fidelity wireframes for all four modules. Tested navigation
-                structures and dashboard layouts. Explored single-page forms,
-                step-by-step wizards, and CSV batch upload patterns before
-                landing on a hybrid approach.
+              <div class="ps-title">Design &amp; Ideation</div>
+              <div class="ps-desc">
+                Low-fidelity wireframes for all four modules. Tested navigation structures and dashboard layouts. Explored single-page forms, step-by-step wizards, and CSV batch upload patterns before landing on a hybrid approach.
               </div>
             </div>
           </div>
-          <div class="proc-row">
-            <div class="proc-n">03</div>
+          <div class="proc-step">
+            <div class="ps-num">03</div>
             <div>
-              <div class="proc-title">Prototyping</div>
-              <div class="proc-desc">
-                High-fidelity interactive prototypes in Figma covering the full
-                submission flow, dashboard drill-down interactions, and report
-                generation. Tested simultaneously with compliance managers and
-                ops staff.
+              <div class="ps-title">Prototyping</div>
+              <div class="ps-desc">
+                High-fidelity interactive prototypes in Figma covering the full submission flow, dashboard drill-down interactions, and report generation. Tested simultaneously with compliance managers and ops staff.
               </div>
             </div>
           </div>
-          <div class="proc-row">
-            <div class="proc-n">04</div>
+          <div class="proc-step">
+            <div class="ps-num">04</div>
             <div>
-              <div class="proc-title">Testing &amp; Validation</div>
-              <div class="proc-desc">
-                Task-based usability testing on three critical flows: submitting
-                a placement batch, identifying a compliance gap, and generating
-                a quarterly report. Achieved sub-3-minute task completion by the
-                final round.
+              <div class="ps-title">Testing &amp; Validation</div>
+              <div class="ps-desc">
+                Task-based usability testing on three critical flows: submitting a placement batch, identifying a compliance gap, and generating a quarterly report. Achieved sub-3-minute task completion by the final round.
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="cs-sec rv">
-        <div class="sey">
-          <div class="sln"></div>
-          <div class="slb">Key Features</div>
-        </div>
-        <h2 class="cs-h2">What <em>we built</em></h2>
-        <div class="feat-grid">
-          <div class="feat">
-            <div class="feat-n">01</div>
-            <div class="feat-title">Compliance Dashboard</div>
-            <div class="feat-desc">
-              Real-time overview of battery placement status across all
-              registered markets — totals, targets, gaps, and deadlines in a
-              single scannable view. Drill-down per country and battery
-              category.
-            </div>
+       <div class="cs-sec rv">
+          <div class="sey left">
+            <div class="sln"></div>
+            <div class="slb">Visual Design · Mobile Screens</div>
+            
           </div>
-          <div class="feat">
-            <div class="feat-n">02</div>
-            <div class="feat-title">Smart Batch Submissions</div>
-            <div class="feat-desc">
-              Guided forms or CSV batch upload with real-time validation. Flags
-              anomalies before submission. Full audit trail with timestamps and
-              user attribution for every data change.
-            </div>
-          </div>
-          <div class="feat">
-            <div class="feat-n">03</div>
-            <div class="feat-title">One-Click Reports</div>
-            <div class="feat-desc">
-              Quarterly and annual compliance reports generated automatically —
-              formatted to regulatory standards, downloadable as PDF or
-              structured data. Days of work reduced to seconds.
-            </div>
-          </div>
+          <h2 class="cs-h2">Screen Mockups: 
+            <em>Visual Design Details</em></h2>
+          <p class="cs-p">Companion mobile views — lightweight, focused flows optimised for on-the-go access to compliance status and quick data entry.
+          </p>
+
+     
+        
+          
         </div>
       </div>
     </div>
-    <!-- /cs-body -->
-
-    <!-- ════════════════════════════════════════
-     DESKTOP CAROUSEL
-════════════════════════════════════════ -->
-    <div class="car-section rv">
-      <div class="car-hdr">
-        <div class="sey">
-          <div class="sln"></div>
-          <div class="slb">Visual Design · Desktop Screens</div>
-        </div>
-        <h2 class="cs-h2s">Application <em>Screens</em></h2>
-        <p class="car-sub">
-          The interface balances information density with visual calm —
-          structured white space, clear typographic hierarchy, and a status
-          color system where every color carries precise meaning.
-        </p>
-      </div>
-
-      <!-- DESKTOP CAROUSEL -->
-      <div class="car-wrap" id="desktopCar">
+      <div class="car-wrap" id="desktopCar" style="margin-bottom: 60px;">
         <div class="car-track" id="desktopTrack">
           <!-- SLIDE 1 — replace src with your image -->
           <div class="car-slide">
@@ -564,163 +425,171 @@
       </div>
       <!-- /car-wrap -->
     </div>
+    
+    </body>
     <!-- /desktop section -->
+        <div class="car-section car-section-alt rv">
+          
+    
+          <!-- MOBILE CAROUSEL — shows 3 phones side-by-side, slides one at a time -->
+          <div class="car-wrap car-wrap-mobile" id="mobileCar">
+            <div class="car-track car-track-mobile" id="mobileTrack">
+              <!-- MOBILE SLIDE 1 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <img src="assets/CityPark/1.jpg" alt="Mobile Home" loading="lazy"/>
+                </div>
+                <div class="phone-label">Home Screen</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 2 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <img src="assets/CityPark/2.jpg" alt="Mobile Home" loading="lazy"/>
+                  
+                </div>
+                <div class="phone-label">Compliance Overview</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 3 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <img src="assets/CityPark/3.jpg" alt="Mobile Home" loading="lazy"/>
+                  
+                </div>
+                <div class="phone-label">Quick Submission</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 4 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <img src="assets/CityPark/4.jpg" alt="Mobile Home" loading="lazy"/>
+                 
+                </div>
+                <div class="phone-label">Deadline Alerts</div>
+              </div>
+    
+              <!-- MOBILE SLIDE 5 -->
+              <div class="car-slide-m">
+                <div class="car-phone">
+                  <img src="assets/CityPark/5.jpg" alt="Mobile Home" loading="lazy"/>
+                  
+                </div>
+                <div class="phone-label">Profile &amp; Settings</div>
+              </div>
+    
+              <!-- Add more mobile slides following the same pattern -->
+            </div>
+            <!-- /car-track-mobile -->
+    
+            <button
+              class="car-btn car-prev"
+              data-target="mobileCar"
+              aria-label="Previous"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M19 12H5M12 5l-7 7 7 7" />
+              </svg>
+            </button>
+            <button
+              class="car-btn car-next"
+              data-target="mobileCar"
+              aria-label="Next"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+    
+            <div class="car-footer">
+              <div class="car-dots" id="mobileDots" hidden></div>
+              <div class="car-counter" id="mobileCounter" hidden>1 / 5</div>
+            </div>
+          </div>
+          <!-- /car-wrap-mobile -->
+        </div>
+            
 
-    <!-- ════════════════════════════════════════
-     MOBILE CAROUSEL
-════════════════════════════════════════ -->
-    <div class="car-section car-section-alt rv">
-      <div class="car-hdr">
-        <div class="sey">
+      
+      <div class="cs-body">
+          
+      <div class="cs-sec rv">
+        <div class="sey left">
           <div class="sln"></div>
-          <div class="slb">Visual Design · Mobile Screens</div>
+          <div class="slb">Key Features</div>
         </div>
-        <h2 class="cs-h2s">Mobile <em>Experience</em></h2>
-        <p class="car-sub">
-          Companion mobile views — lightweight, focused flows optimised for
-          on-the-go access to compliance status and quick data entry.
-        </p>
-      </div>
-
-      <!-- MOBILE CAROUSEL — shows 3 phones side-by-side, slides one at a time -->
-      <div class="car-wrap car-wrap-mobile" id="mobileCar">
-        <div class="car-track car-track-mobile" id="mobileTrack">
-          <!-- MOBILE SLIDE 1 -->
-          <div class="car-slide-m">
-            <div class="car-phone">
-              <div class="phone-notch"></div>
-              <img src="assets/CityPark/1.jpg" alt="Mobile Home" loading="lazy"/>
-              <div class="car-ph car-ph-m">
-                <div class="car-ph-n">M01</div>
-                <div class="car-ph-t">Home — Status</div>
-              </div>
+        <h2 class="cs-h2">What <em>we built</em></h2>
+        <div class="feat-grid">
+          <div class="feat">
+            <div class="feat-n">01</div>
+            <div class="feat-title">Compliance Dashboard</div>
+            <div class="feat-desc">
+              Real-time overview of battery placement status across all registered markets — totals, targets, gaps, and deadlines in a single scannable view. Drill-down per country and battery category.
             </div>
-            <div class="phone-label">Home Screen</div>
           </div>
-
-          <!-- MOBILE SLIDE 2 -->
-          <div class="car-slide-m">
-            <div class="car-phone">
-              <div class="phone-notch"></div>
-              <!-- <img src="images/powerloop/mobile_02_dashboard.jpg" alt="Mobile Dashboard" loading="lazy"/> -->
-              <div class="car-ph car-ph-m">
-                <div class="car-ph-n">M02</div>
-                <div class="car-ph-t">Dashboard</div>
-              </div>
+          <div class="feat">
+            <div class="feat-n">02</div>
+            <div class="feat-title">Smart Batch Submissions</div>
+            <div class="feat-desc">
+              Guided forms or CSV batch upload with real-time validation. Flags anomalies before submission. Full audit trail with timestamps and user attribution for every data change.
             </div>
-            <div class="phone-label">Compliance Overview</div>
           </div>
-
-          <!-- MOBILE SLIDE 3 -->
-          <div class="car-slide-m">
-            <div class="car-phone">
-              <div class="phone-notch"></div>
-              <!-- <img src="images/powerloop/mobile_03_submit.jpg" alt="Mobile Submit" loading="lazy"/> -->
-              <div class="car-ph car-ph-m">
-                <div class="car-ph-n">M03</div>
-                <div class="car-ph-t">Quick Submit</div>
-              </div>
+          <div class="feat">
+            <div class="feat-n">03</div>
+            <div class="feat-title">One-Click Reports</div>
+            <div class="feat-desc">
+              Quarterly and annual compliance reports generated automatically — formatted to regulatory standards, downloadable as PDF or structured data. Days of work reduced to seconds.
             </div>
-            <div class="phone-label">Quick Submission</div>
           </div>
-
-          <!-- MOBILE SLIDE 4 -->
-          <div class="car-slide-m">
-            <div class="car-phone">
-              <div class="phone-notch"></div>
-              <!-- <img src="images/powerloop/mobile_04_alerts.jpg" alt="Mobile Alerts" loading="lazy"/> -->
-              <div class="car-ph car-ph-m">
-                <div class="car-ph-n">M04</div>
-                <div class="car-ph-t">Alerts</div>
-              </div>
-            </div>
-            <div class="phone-label">Deadline Alerts</div>
-          </div>
-
-          <!-- MOBILE SLIDE 5 -->
-          <div class="car-slide-m">
-            <div class="car-phone">
-              <div class="phone-notch"></div>
-              <!-- <img src="images/powerloop/mobile_05_profile.jpg" alt="Mobile Profile" loading="lazy"/> -->
-              <div class="car-ph car-ph-m">
-                <div class="car-ph-n">M05</div>
-                <div class="car-ph-t">Profile</div>
-              </div>
-            </div>
-            <div class="phone-label">Profile &amp; Settings</div>
-          </div>
-
-          <!-- Add more mobile slides following the same pattern -->
-        </div>
-        <!-- /car-track-mobile -->
-
-        <button
-          class="car-btn car-prev"
-          data-target="mobileCar"
-          aria-label="Previous"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <path d="M19 12H5M12 5l-7 7 7 7" />
-          </svg>
-        </button>
-        <button
-          class="car-btn car-next"
-          data-target="mobileCar"
-          aria-label="Next"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-
-        <div class="car-footer">
-          <div class="car-dots" id="mobileDots"></div>
-          <div class="car-counter" id="mobileCounter">1 / 5</div>
         </div>
       </div>
-      <!-- /car-wrap-mobile -->
     </div>
-    <!-- /mobile section -->
-
-    <!-- RESULTS -->
+    
+    
+   
     <div class="cs-body">
       <div class="cs-sec rv">
-        <div class="sey">
-          <div class="sln"></div>
-          <div class="slb">Results &amp; Impact</div>
-        </div>
-        <h2 class="cs-h2">Measuring <em>the impact</em></h2>
-        <p class="cs-p">
-          Since deployment, PowerLoop has fundamentally changed how distributor
-          teams approach EU battery compliance. Reporting cycles that previously
-          consumed entire working days are now completed in under an hour — with
-          significantly higher confidence in data accuracy and audit readiness.
-        </p>
-        <div class="results">
-          <div class="rc">
-            <div class="rc-lbl">Reporting Time Saved</div>
-            <div class="rc-val">85<span>%</span></div>
-            <div class="rc-delta">↓ days → under an hour</div>
+        <div class="cs-sec rv">
+          <div class="sey left">
+            <div class="sln"></div>
+            <div class="slb">Results &amp; Impact</div>
           </div>
-          <div class="rc">
-            <div class="rc-lbl">Submission Errors</div>
-            <div class="rc-val">3.2<span>×</span></div>
-            <div class="rc-delta">↓ fewer corrections needed</div>
-          </div>
-          <div class="rc">
-            <div class="rc-lbl">User Satisfaction</div>
-            <div class="rc-val">4.8<span>/5</span></div>
-            <div class="rc-delta">↑ across all user roles</div>
+          <h2 class="cs-h2">Measuring <em>the impact</em></h2>
+          <p class="cs-p">
+            Since deployment, PowerLoop has fundamentally changed how distributor teams approach EU battery compliance. Reporting cycles that previously consumed entire working days are now completed in under an hour — with significantly higher confidence in data accuracy and audit readiness.
+          </p>
+          <div class="results-grid">
+            <div class="rc">
+              <div class="rc-lbl">Reporting Time Saved</div>
+              <div class="rc-val">
+                85<span style="font-size: 26px; color: var(--gold)">%</span>
+              </div>
+              <div class="rc-delta">↓ days → under an hour</div>
+            </div>
+            <div class="rc">
+              <div class="rc-lbl">Submission Errors</div>
+              <div class="rc-val">
+                3.2<span style="font-size: 26px; color: var(--gold)">×</span>
+              </div>
+              <div class="rc-delta">↓ fewer corrections needed</div>
+            </div>
+            <div class="rc">
+              <div class="rc-lbl">User Satisfaction</div>
+              <div class="rc-val">
+                4.8<span style="font-size: 26px; color: var(--gold)">/5</span>
+              </div>
+              <div class="rc-delta">↑ across all user roles</div>
+            </div>
           </div>
         </div>
       </div>
@@ -728,58 +597,74 @@
 
     <!-- NEXT PROJECT -->
     <div class="cs-next rv">
-      <div class="cs-next-eye">Next Project</div>
+      <div class="cs-next-lbl">Next Project</div>
       <div class="cs-next-title">Vita<em>ly</em></div>
-      <a href="vitaly.html" class="btn-gold"
-        >View Case Study
-        <svg
-          width="13"
-          height="13"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M5 12h14M12 5l7 7-7 7" /></svg
-      ></a>
+      <a href="./vitaly.html" class="btn-gold">View Case Study
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
     </div>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-inner">
-        <a href="../index.html" class="f-logo">Andrei <em>Doca</em></a>
-        <div class="f-copy">© 2025 Andrei Doca. All Rights Reserved.</div>
-        <div class="f-links">
-          <a
-            href="https://www.linkedin.com/in/andreidoca/"
-            target="_blank"
-            class="f-social"
-            ><svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
-              />
-              <rect x="2" y="9" width="4" height="12" />
-              <circle cx="4" cy="4" r="2" /></svg
-          ></a>
-          <a
-            href="https://www.behance.net/DocaAndrei"
-            target="_blank"
-            class="f-social"
-            ><svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
-              /></svg
-          ></a>
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-brand-title">Andrei <em>Doca</em></a>
+            <p class="footer-brand-desc">
+              UI/UX Product Designer passionate about creating intuitive digital
+              experiences. Based in Romania, working with clients worldwide.
+            </p>
+            <div class="footer-socials">
+              <a href="https://www.linkedin.com/in/andreidoca/" target="_blank" class="footer-social"
+                ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" /></svg
+              ></a>
+              <a href="https://www.behance.net/DocaAndrei" target="_blank" class="footer-social"
+                ><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
+                /></svg
+              ></a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <div class="footer-col-links">
+              <a href="../index.html">Home</a
+              ><a href="../index.html#about">Philosophy</a
+              ><a href="../index.html#services">Services</a
+              ><a href="../index.html#projects">Work</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Case Studies</div>
+            <div class="footer-col-links">
+              <a href="./vitaly.html">Vitaly</a
+              ><a href="./credit_track.html">Credit Track</a
+              ><a href="./citypark.html">City Park</a
+              ><a href="./powerloop.html">PowerLoop</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Contact</div>
+            <div class="footer-col-links">
+              <a href="mailto:andreitiberiu.doca@gmail.com">Email me</a
+              ><a href="https://www.linkedin.com/in/andreidoca/" target="_blank">LinkedIn</a
+              ><a href="https://www.behance.net/DocaAndrei" target="_blank">Behance</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copy">© 2025 Andrei Doca. All Rights Reserved.</span
+          ><span class="footer-copy">Designed with care in Romania</span>
         </div>
       </div>
     </footer>
 
+    <script src="../js/scripts.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
     <script src="./js/powerloop.js" defer></script>
-    <script src="./usecases/scripts/carousel.js" defer></script>
   </body>
 </html>
