@@ -1508,4 +1508,9 @@ a:focus {
   .cs-meta-item {
     padding: 18px 0 ;
   }
+   .ia-modules,
+        .comp-chips,
+        .feat-grid {
+          grid-template-columns: 1fr;
+        }
 }

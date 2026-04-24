@@ -512,7 +512,7 @@
   color: rgba(201, 168, 76, 0.8);
 }
 .acc-sub-services {
-  display: flex;
+  display: flex ;
   flex-direction: column;
   gap: 18px;
 }
@@ -914,6 +914,7 @@
   }
   .acc-content {
     padding-left: 0;
+    display: block;
   }
   .about-grid{
     grid-template-columns: 1fr;
