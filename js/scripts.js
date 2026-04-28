@@ -21,9 +21,13 @@
     requestAnimationFrame(t);
   })();
 
-  var nav = document.getElementById("siteNav");
-  window.addEventListener("scroll", function () {
-    nav.classList.toggle("scrolled", scrollY > 60);
+  document.addEventListener("DOMContentLoaded", function () {
+    var nav = document.getElementById("siteNav");
+    if (!nav) return;
+  
+    window.addEventListener("scroll", function () {
+      nav.classList.toggle("scrolled", scrollY > 60);
+    });
   });
   var io = new IntersectionObserver(
     function (es) {

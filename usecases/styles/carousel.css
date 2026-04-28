@@ -315,6 +315,9 @@ MOBILE CAROUSEL — phone frames
     text-align: center;
   }
 
+  
+
+  
   /* mobile carousel arrows at phone mid-height */
   .car-wrap-mobile .car-btn {
     top: 38%;
@@ -333,12 +336,14 @@ MOBILE CAROUSEL — phone frames
     }
     .car-slide-m {
       flex: 0 0 calc(50% - 10px);
+      
     }
   }
   @media (max-width: 600px) {
     .car-wrap,
     .car-wrap-mobile {
       padding: 0 44px;
+      position: relative;
     }
     .car-btn {
       width: 36px;
@@ -347,6 +352,7 @@ MOBILE CAROUSEL — phone frames
     .car-slide-m {
       flex: 0 0 75%;
     }
+    
     .car-hdr {
       padding: 0 24px;
     }
