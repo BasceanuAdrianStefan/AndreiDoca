@@ -102,12 +102,7 @@ function initCarousel(
 
  
 
-  // Auto-advance
-  var timer = setInterval(function () { go(cur < maxIdx ? cur + 1 : 0); }, 5000);
-  wrap.addEventListener("mouseenter", function () { clearInterval(timer); });
-  wrap.addEventListener("mouseleave", function () {
-    timer = setInterval(function () { go(cur < maxIdx ? cur + 1 : 0); }, 5000);
-  });
+  
 
   go(0);
 }
