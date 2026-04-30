@@ -912,11 +912,47 @@
     grid-template-columns: 44px 1fr auto;
     gap: 14px;
   }
-  .acc-content {
-    padding-left: 0;
-    display: block;
-  }
+  
+
   .about-grid{
     grid-template-columns: 1fr;
   }
+  
+  .acc-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding:0;
+      grid-template-areas: 
+        "text"
+        "services"
+        "tags"
+      ;
+    }
+  
+    .acc-content > div:first-child {
+      display: contents; 
+    }
+  
+    .acc-desc {
+      grid-area: text;
+    }
+  
+    .acc-sub-services {
+      grid-area: services;
+    }
+  
+    .acc-tags {
+      grid-area: tags;
+      padding-top:30px;
+      padding-bottom: 20px;
+    }
+    .acc-text{
+      grid-area:text;
+    }
+    
+    .acc-content p[style*="font-style:italic"] {
+      grid-area: tags;
+      margin-top: 60px;
+    }
+  
 }

@@ -610,6 +610,7 @@ a {
         grid-template-columns: repeat(4, 1fr);
         gap: 14px;
         margin-top: 24px;
+        display:flex;
       }
       .ia-mod {
         padding: 24px 18px;
@@ -1508,9 +1509,14 @@ a:focus {
   .cs-meta-item {
     padding: 18px 0 ;
   }
-   .ia-modules,
         .comp-chips,
         .feat-grid {
           grid-template-columns: 1fr;
+
         }
+  .ia-modules
+  {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
 }
