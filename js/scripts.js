@@ -114,6 +114,7 @@
     slides[cur2].classList.add("active");
     dotsWrap.children[cur2].classList.add("active");
   }
+ 
   document.getElementById("cPrev").addEventListener("click", function () {
     goTo(cur2 - 1);
   });
@@ -123,4 +124,5 @@
   setInterval(function () {
     goTo(cur2 + 1);
   }, 7000);
+
 })();

@@ -697,16 +697,7 @@
     transform: none;
   }
 }
-.c-stars {
-  display: flex;
-  gap: 3px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.c-star {
-  color: var(--gold);
-  font-size: 13px;
-}
+
 .c-quote {
   font-family: var(--serif);
   font-style: italic;

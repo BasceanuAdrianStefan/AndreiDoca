@@ -106,7 +106,7 @@
   /* arrow buttons */
   .car-btn {
     position: absolute;
-    top: 28%;
+    top: 40%;
     transform: translateY(-50%);
     width: 42px;
     height: 42px;
@@ -121,6 +121,12 @@
     cursor: none;
     z-index: 10;
     transition: border-color 0.3s, color 0.3s;
+  }
+  .car-next:disabled{
+    display: none;
+  }
+  .car-prev:disabled{
+    display: none;
   }
   .car-btn:hover {
     border-color: var(--gold);
